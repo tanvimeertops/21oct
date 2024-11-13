@@ -44,19 +44,25 @@ package com.basics;
 public class PatternDemo1 {
 public static void main(String[] args) {
 	/*
-	 * 1
-	 * 12
-	 * 123
-	 * 1234
-	 * 12345
+	 * +++++1
+	 * ++++12
+	 * +++123
+	 * ++1234
+	 * +12345
+	 * 
+	 * for k
+	 * completely depends on i
 	 */
 	
-//	for (int i = 1; i <=5; i++) { //row
-//		for (int j = 1; j <=i; j++) { //col
-//			System.out.print(j);
-//		}
-//		System.out.println();
-//	}
+	for (int i = 1; i <=5; i++) { //row
+		for (int k = i; k <=5; k++) {
+			System.out.print(" ");
+		}
+		for (int j = 1; j <=i; j++) { //col
+			System.out.print(j);
+		}
+		System.out.println();
+	}
 	
 	/*
 	 * 1
@@ -66,12 +72,12 @@ public static void main(String[] args) {
 	 * 54321
 	 */
 	
-	for (int i = 1; i <=5; i++) { //row
-		for (int j = i; j >=1; j--) { //col
-			System.out.print(j);
-		}
-		System.out.println();
-	}
+//	for (int i = 1; i <=5; i++) { //row
+//		for (int j = i; j >=1; j--) { //col
+//			System.out.print(j);
+//		}
+//		System.out.println();
+//	}
 	
 	/*
 	 * 5
@@ -92,5 +98,7 @@ public static void main(String[] args) {
 	 * 1010
 	 * 10101
 	 */
+	
+	
 }
 }
