@@ -20,24 +20,33 @@ class Student{
 	int id;
 	String name;
 	
-	public void setData() {
-		id=123;
-		name="roshan";
+	public void setData(int roll_name,String s_name) {
+		id=roll_name;
+		name=s_name;
 	}
 	public void displayData() {
 		System.out.println("id is :"+id);
 		System.out.println("name is :"+name);
 	}
 }
+/*
+ * class program 1.Assign and print the roll number, 
+ * phone number and address of two students
+ *  having names "Sam" and "John" 
+ *  respectively by creating two objects of the class 'Student'.
+ */
 public class ClassDemo {
 public static void main(String[] args) {
 	//class_name obj_name=new class_name();
 	Student s1=new Student(); 
-	s1.setData();
+	Student s2=new Student(); 
+	s1.setData(123,"sam");
+	s2.setData(124,"john");
 	/*
 	 * java does not support garbage value
 	 */
 	s1.displayData();
+	s2.displayData();
 	
 }
 }
