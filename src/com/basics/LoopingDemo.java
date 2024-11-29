@@ -25,26 +25,28 @@ package com.basics;
 public class LoopingDemo {
 public static void main(String[] args) {
 	
-//	for (int i = 1; i <=5; i++) {//6
-//		System.out.println(i);//5
-//	}
+	for (int i = 1; i <=5; i++) {//6
+		System.out.println(i);//5
+	}
 	//11 number of lines executed in the loop
 	
 	
-//	int i=1;  //1
-//	while (i<=5) { //6
-//		System.out.println(i);//5
-//		i++;//5
-//	}
-	//17 number of lines executed in the loop
-	
-	
-	int i=1;//1
-	do { //3
+	int i=1;  //1
+	while (i<=5) { //6
 		System.out.println(i);//5
-		i++;//4
-	} while (i<=5);//4
+		i++;//5
+	}
+	//17 number of lines executed in the loop
+	
+	
+	int j=1;//1
+	do { //3
+		System.out.println(j);//5
+		j++;//4
+	} while (j<=5);//4
 	
 	//17 number of lines executed in the loop
+	
+	
 }
 }
