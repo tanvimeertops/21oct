@@ -34,17 +34,24 @@ class Exam extends Student1 {
 		percentage="First Class";
 	}
 	
+	
+}
+
+class Sports extends Exam{
+	int sports_marks=23;
 	public void display() {
 		System.out.println("roll no is: "+roll_no);
 		System.out.println("name is: "+name);
 		System.out.println("percentage is :"+percentage);
+		System.out.println("sports marks is :"+sports_marks);
 	}
 }
 public class InheritanceDemo {
 public static void main(String[] args) {
-	Exam e1=new Exam();
-	e1.setStudent();
-	e1.setData();
-	e1.display();
+//	Exam e1=new Exam();
+	Sports s1=new Sports();
+	s1.setStudent();
+	s1.setData();
+	s1.display();
 }
 }

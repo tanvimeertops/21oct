@@ -37,13 +37,30 @@ class SavingAcc extends Bank {
 		System.out.println("After interest total"
 				+ " balance is: "+balance);
 	}
-	
-	
+}
 
+class FixedDeposit extends SavingAcc {
+	double pa,interest,tenure,si,fd;
+	Scanner sc=new Scanner(System.in);
+	
+	public void setFDData(double amount) {
+	pa=	amount;
+	 interest=10;
+	 tenure=5;
+	
+	}
+	
+	public void simpleInterest() {
+		si=(pa*interest*tenure)/100;
+		System.out.println("your total amount is :"+si);
+		fd=si+pa;
+		System.out.println("after maturity you will get: "+fd);
+	}
+	
 }
 public class SingleInheritance {
 public static void main(String[] args) {
-	SavingAcc sa=new SavingAcc();
+	FixedDeposit sa=new FixedDeposit();
 	sa.setAccData();
 	sa.display();
 	
@@ -61,5 +78,10 @@ public static void main(String[] args) {
 	sa.withDraw(amount);
 	
 	sa.calInterest();
+	System.out.println("Enter the amount for FD :");
+	amount=sc.nextDouble();
+	
+	sa.setFDData(amount);
+	sa.simpleInterest();
 }
 }
