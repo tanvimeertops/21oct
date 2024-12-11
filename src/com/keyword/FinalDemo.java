@@ -13,7 +13,6 @@ final class FDemo{
 	String name;
 	
 	public final void setData() {
-		
 		name="pratik";
 	}
 	public void show() {
