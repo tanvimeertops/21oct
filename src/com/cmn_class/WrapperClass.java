@@ -1,7 +1,5 @@
 package com.cmn_class;
 
-import javax.swing.plaf.synth.SynthScrollPaneUI;
-
 /*
  * Wrapper class : conversion of non primitive datatype
  * to primitive datatype and vice a versa
@@ -15,8 +13,17 @@ import javax.swing.plaf.synth.SynthScrollPaneUI;
  * 3.Unboxing:object to variable, now object value is given
  * to primitive type before it was not possible
  * 
+ * Object: It is a root class for all the java class
  * 
  */
+
+class Calc{
+	int a=12,b=34;
+	
+	public void sum() {
+		System.out.println("sum is :"+(a+b));
+	}
+}
 public class WrapperClass {
 public static void main(String[] args) {
 	String s1=new String("This is Tops Technologies...");
@@ -45,5 +52,11 @@ public static void main(String[] args) {
 	
 	String s2=String.valueOf(i2);
 	System.out.println("String val is :"+s2);
+	
+	Calc c=new Calc();
+	c.sum();
+	
+	
+	
 }
 }
